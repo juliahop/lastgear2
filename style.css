@@ -5,15 +5,202 @@ html, body {
 }
 
 body {
-  /* width: 100%;
-  height: 100%; */
   background-color: #ffee32;
   margin: 0;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 
-body::after {
+.container {  
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.logo-img {
+  transform: translateY(60vh)
+            skew(-80deg)
+            rotateX(80deg);
+}
+
+.girl-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.girl {
+  transform: scale(4) translate(-5%, -5%);
+  animation: jump 1500ms linear forwards 12ms, 
+             face 50ms linear forwards 1520ms,
+             ride 200ms ease-in forwards 2000ms;
+}
+
+/* Animation girl */
+
+@keyframes jump {
+  100% {
+    transform: scale(4) translate(-5.5%, -5.5%);
+  }
+}
+
+@keyframes face {
+  100% {
+    transform: scale(4) translate(20%, 45%);
+  }
+}
+
+@keyframes ride {
+  100% {
+    transform: scale(4) translate(-100%, 45%);
+  }
+}
+
+
+ @media only screen and (min-width: 426px) { 
+  .girl {
+    transform: scale(4) translate(-5%, -20%);
+  }
+
+  @keyframes jump {
+    100% {
+      transform: scale(4) translate(-5.5%, -20.5%);
+    }
+  }
+  
+  @keyframes face {
+    100% {
+      transform: scale(4) translate(20%, 45%);
+    }
+  }
+}
+
+
+
+ @media only screen and (min-width: 800px) { 
+  .girl {
+    transform: scale(4) translate(5%, -20%);
+  }
+
+  @keyframes jump {
+    100% {
+      transform: scale(4) translate(4.5%, -20.5%);
+    }
+  }
+  
+  @keyframes face {
+    100% {
+      transform: scale(4) translate(30%, 45%);
+    }
+  }
+}
+
+
+
+ @media only screen and (min-width: 1100px) { 
+  .girl {
+    transform: scale(5) translate(5%, -25%);
+  }
+  
+  @keyframes jump {
+    100% {
+      transform: scale(5) translate(4.5%, -25.5%);
+    }
+  }
+  
+  @keyframes face {
+    100% {
+      transform: scale(5) translate(30%, 45%);
+    }
+  }
+}
+
+
+
+ @media only screen and (min-width: 1200px) { 
+  .girl {
+    transform: scale(7) translate(5%, -25%);
+  }
+
+  @keyframes jump {
+    100% {
+      transform: scale(7) translate(4.5%, -25.5%);
+    }
+  }
+  
+  @keyframes face {
+    100% {
+      transform: scale(7) translate(30%, 45%);
+    }
+  }
+}
+
+
+
+ @media only screen and (min-width: 1450px) { 
+  .girl {
+    transform: scale(8) translate(10%, -30%);
+  }
+
+  @keyframes jump {
+    100% {
+      transform: scale(8) translate(9.5%, -30.5%);
+    }
+  }
+  
+  @keyframes face {
+    100% {
+      transform: scale(8) translate(30%, 42%);
+    }
+  }
+}
+
+ @media only screen and (min-width: 2500px) { 
+  .girl {
+    transform: scale(8) translate(15%, -20%);
+  }
+
+  @keyframes jump {
+    100% {
+      transform: scale(8) translate(14.5%, -20.5%);
+    }
+  }
+  
+  @keyframes face {
+    100% {
+      transform: scale(8) translate(40%, 45%);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body::after {
   content: '';
   position: absolute;
   top: 0;
@@ -28,11 +215,11 @@ body::after {
               Mview 60ms linear forwards 850ms,
               Mjump 1200ms linear forwards 900ms,
               /* Msmall 20ms linear forwards 2100ms, */
-              Mride 400ms ease-in forwards 2300ms,
-              MrideGroup 700ms ease-in forwards 3900ms;
-}
+              /* Mride 400ms ease-in forwards 2300ms,
+              MrideGroup 700ms ease-in forwards 3900ms; */
+} */
 
-@media (min-width: 426px) {
+/* @media (min-width: 426px) {
   body::after {
     background-size: 280%, 80%;
     background-position: 70% 90%, right -450% top 80%;
@@ -43,10 +230,10 @@ body::after {
                 ride 200ms ease-in forwards 2200ms,
                 rideGroup 700ms ease-in forwards 3900ms;
   }
-}
+} */
 
 /* on mobile */
-@keyframes MjumpFirst {
+/* @keyframes MjumpFirst {
   100% {
     background-position: 46% 81%, left -90% top 80%;
   }
@@ -85,12 +272,12 @@ body::after {
     background-position: left 150% top 80%, left 190% top 80%;
   }  
 }
-
+ */
 
 /* end on mobile */
 
 
-@keyframes jumpFirst {
+/* @keyframes jumpFirst {
   100% {
     background-position: 70.5% 90.5%, right -450% top 80%;
   }
@@ -200,31 +387,31 @@ img {
   100% {
     width: 0%;
   }
-}
+} */
 
-.text-container {
+/* .text-container {
   /* grid-column: 2 / -2;   */
-  position: absolute;
+  /* position: absolute;
   left: -10vw;
-  bottom: 30vh;
+  bottom: 30vh; */
   /* display: flex; */
-  transform: rotateX(90deg);
+  /* transform: rotateX(90deg);
   animation: show 500ms linear forwards 4800ms; 
-}
+} */ */
 
-@keyframes show {
+/* @keyframes show {
   100% {
     transform: rotateX(0deg);
   }
-}
+} */
 
-.text-img {
+/* .text-img {
   /* flex: 1; */
-  opacity: 0.95;
+  /* opacity: 0.95;
   width: 200%;
-}
+} */ */
 
-@media (min-width: 426px) {
+/* @media (min-width: 426px) {
   .text-container {
     bottom: 0;
     left: 0;
@@ -239,16 +426,16 @@ img {
   .text-container {
     /* position: static;
     grid-column: 2 / -2; */
-    bottom: 10vh;
+    /* bottom: 10vh;
     left: 10vw;
   }
-}
+} */ */
 
-@media (min-width: 1725px) {
+/* @media (min-width: 1725px) {
   .text-container {
     /* position: static;
     grid-column: 2 / -2; */
-    bottom: 10vh;
+    /* bottom: 10vh;
     left: 20vw;
   }
 }
@@ -258,4 +445,4 @@ img {
     bottom: 20vh;
     left: 30vw;
   }
-}
+} */ */
