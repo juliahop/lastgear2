@@ -247,7 +247,7 @@ img {
   right: 0;
   bottom: 0;
   transform-origin: left;
-  animation: reveal 200ms linear forwards 3250ms;
+  animation: reveal 150ms linear forwards 3250ms;
 }
 
 @keyframes reveal {
