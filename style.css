@@ -206,7 +206,7 @@ img {
 
 .group {
   transform: translateX(100%);
-  animation: rideGroup 500ms linear forwards 3000ms; 
+  animation: rideGroup 500ms ease-in forwards 3000ms; 
 }
 
 /* animation group */
