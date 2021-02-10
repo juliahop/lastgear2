@@ -204,6 +204,8 @@ img {
 @media only screen and (min-width: 1100px) {
   .text-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -259,6 +261,17 @@ img {
   @keyframes rideGroup {
     100% {
       transform: translateX(-150%)
+    }
+  }
+
+@media only screen and (min-width: 1750px) {
+  .group {
+    transform: translateX(200%);
+  }
+
+  @keyframes rideGroup {
+    100% {
+      transform: translateX(-200%)
     }
   }
 }
