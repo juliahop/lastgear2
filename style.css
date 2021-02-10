@@ -216,7 +216,7 @@ img {
   right: 0;
   bottom: 0;
   transform-origin: left;
-  animation: reveal 150ms linear forwards 3250ms;
+  animation: reveal 150ms ease-in forwards 3300ms;
 }
 
 @keyframes reveal {
