@@ -6,3 +6,20 @@ function showPage() {
 }
 
 window.addEventListener('load', showPage);
+
+// Listen for the (almost) last animation to finish 
+// const container = document.querySelector('.container');
+
+// const animContainer = document.querySelector('.group-container');
+
+// animContainer.addEventListener('animationend', function() {
+  
+//   setTimeout(() => {
+//     container.style.display = 'none';
+//     void container.offsetWidth;
+//     container.style.display = 'flex';
+
+    
+//   }, 6000)
+// });
+

@@ -23,6 +23,13 @@ body {
   height: max(100vh, 100%);
   display: flex;
   flex-direction: column;
+  animation: fade 1500ms linear forwards 6000ms;
+}
+
+@keyframes fade {
+  100% {
+    opacity: 0;
+  }
 }
 
 img:not(.girl) {
@@ -37,7 +44,7 @@ img:not(.girl) {
 .logo-img {
   transform: rotateX(90deg);
   transform-origin: bottom;
-  animation: up 50ms linear forwards 2250ms;  
+  animation: up 50ms linear forwards 2600ms;  
 }
 
 /* Animation logo */
@@ -61,7 +68,7 @@ img:not(.girl) {
   transform: translate(-40%, -40%);
   animation: jump 1500ms linear forwards 12ms, 
              face 50ms linear forwards 1520ms,
-             ride 300ms ease-in forwards 2000ms;
+             ride 150ms ease-in forwards 2450ms;
 }
 
 /* Animation girl */
@@ -232,7 +239,7 @@ img:not(.girl) {
   right: 0;
   bottom: 0;
   transform-origin: left;
-  animation: reveal 250ms ease-in forwards 3300ms;
+  animation: reveal 250ms ease-in forwards 3500ms;
 }
 
 @keyframes reveal {
@@ -255,7 +262,7 @@ img:not(.girl) {
 
 .group {
   transform: translateX(100%);
-  animation: rideGroup 500ms ease-in forwards 3000ms; 
+  animation: rideGroup 500ms ease-in forwards 3250ms; 
 }
 
 /* animation group */
