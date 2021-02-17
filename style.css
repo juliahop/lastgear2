@@ -45,7 +45,7 @@ img:not(.girl) {
   /* transform: rotateX(90deg);
   transform-origin: bottom; */
   transform: scale(0);
-  animation: big 250ms cubic-bezier(0.025, 0.905, 0.295, 1.105) forwards 2700ms;  
+  animation: big 250ms cubic-bezier(0.025, 0.905, 0.295, 1.105) forwards 2750ms;  
 }
 
 /* Animation logo */
@@ -246,7 +246,7 @@ img:not(.girl) {
   right: 0;
   bottom: 0;
   transform-origin: left;
-  animation: reveal 250ms ease-in forwards 3900ms;
+  animation: reveal 250ms ease-in forwards 4000ms;
 }
 
 @keyframes reveal {
@@ -269,7 +269,7 @@ img:not(.girl) {
 
 .group {
   transform: translateX(100%);
-  animation: rideGroup 500ms ease-in forwards 3650ms; 
+  animation: rideGroup 500ms ease-in forwards 3700ms; 
 }
 
 /* animation group */
