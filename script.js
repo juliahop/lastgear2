@@ -7,12 +7,11 @@ function showPage() {
 
 window.addEventListener('load', showPage);
 
-// Listen for the (almost) last animation to finish 
+// Listen for the last animation to finish to restart the 'whole thing'
 // const container = document.querySelector('.container');
 
-// const animContainer = document.querySelector('.group-container');
-
-// animContainer.addEventListener('animationend', function() {
+// container.addEventListener('animationend', function(e) {
+//   if (e.target === container){
   
 //   setTimeout(() => {
 //     container.style.display = 'none';
@@ -20,6 +19,7 @@ window.addEventListener('load', showPage);
 //     container.style.display = 'flex';
 
     
-//   }, 6000)
+//   }, 5000);
+// }
 // });
 
